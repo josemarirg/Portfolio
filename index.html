@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de José María Rodríguez Gómez - Desarrollador Web Full Stack">
+    <meta name="author" content="José María Rodríguez Gómez">
+    <title>José María Rodríguez Gómez - Desarrollador Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="nav-overlay" id="nav-overlay"></div>
+
+    <header>
+        <div class="header-content">
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+
+                <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú de navegación">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </nav>
+
+            <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="profile-photo-wrapper">
+                    <img src="foto.png" alt="José María Rodríguez Gómez" class="profile-photo"
+                        onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'profile-placeholder\'><span>JM</span></div>'">
+                </div>
+                <p class="hero-subtitle">José María Rodríguez Gómez</p>
+                <h1>desarrollador web</h1>
+            </div>
+        </section>
+
+        <section class="about">
+            <div id="about" class="container">
+                <h2>Sobre mí</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Soy estudiante de Desarrollo de Aplicaciones Web en mi último año, apasionado por el diseño,
+                            la programación y el trabajo con bases de datos. Me especializo en crear experiencias web
+                            modernas,
+                            funcionales y centradas en el usuario, combinando un diseño limpio con un código eficiente y
+                            bien estructurado.</p>
+                        <p>Cada proyecto es una oportunidad para resolver problemas únicos, aprender nuevas tecnologías
+                            y seguir creciendo como desarrollador. Mi enfoque se basa en la simplicidad, la usabilidad y
+                            el rendimiento, asegurando que cada línea de código tenga un propósito claro.</p>
+                        <p>Me considero una persona responsable, adaptable y con facilidad para trabajar en equipo,
+                            siempre buscando estar al día con las últimas tendencias y mejores prácticas del desarrollo
+                            web. Busco una oportunidad que me permita aplicar y ampliar mis conocimientos técnicos,
+                            contribuyendo activamente al éxito del proyecto y del equipo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <div class="container">
+                <h2 id="skills">Habilidades técnicas</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="skill-icon">
+                            <svg width="50px" height="50px" stroke-width="0.7" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" color="#8c8c8c">
+                                <path
+                                    d="M2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12Z"
+                                    stroke="#8c8c8c" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                                <path d="M13 2.04932C13 2.04932 16 5.99994 16 11.9999C16 17.9999 13 21.9506 13 21.9506"
+                                    stroke="#8c8c8c" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                                <path d="M11 21.9506C11 21.9506 8 17.9999 8 11.9999C8 5.99994 11 2.04932 11 2.04932"
+                                    stroke="#8c8c8c" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                                <path d="M2.62964 15.5H21.3704" stroke="#8c8c8c" stroke-width="0.7"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M2.62964 8.5H21.3704" stroke="#8c8c8c" stroke-width="0.7"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                        <h3>Frontend</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Framework</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-icon">
+                            <svg width="50px" height="50px" viewBox="0 0 24 24" stroke-width="0.7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" color="#8c8c8c">
+                                <path
+                                    d="M10.0503 10.6066L2.97923 17.6777C2.19818 18.4587 2.19818 19.725 2.97923 20.5061V20.5061C3.76027 21.2871 5.0266 21.2871 5.80765 20.5061L12.8787 13.435"
+                                    stroke="#8c8c8c" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                                <path
+                                    d="M10.0502 10.6066C9.20638 8.45358 9.37134 5.6286 11.1109 3.88909C12.8504 2.14957 16.0606 1.76777 17.8284 2.82843L14.7877 5.8691L14.5051 8.98014L17.6161 8.69753L20.6568 5.65685C21.7175 7.42462 21.3357 10.6349 19.5961 12.3744C17.8566 14.1139 15.0316 14.2789 12.8786 13.435"
+                                    stroke="#8c8c8c" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3>Backend</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">APIs REST</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-icon">
+                            <svg width="50px" height="50px" stroke-width="0.7" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" color="#8c8c8c">
+                                <path d="M5 12V18C5 18 5 21 12 21C19 21 19 18 19 18V12" stroke="#8c8c8c"
+                                    stroke-width="0.7"></path>
+                                <path d="M5 6V12C5 12 5 15 12 15C19 15 19 12 19 12V6" stroke="#8c8c8c"
+                                    stroke-width="0.7"></path>
+                                <path d="M12 3C19 3 19 6 19 6C19 6 19 9 12 9C5 9 5 6 5 6C5 6 5 3 12 3Z" stroke="#8c8c8c"
+                                    stroke-width="0.7"></path>
+                            </svg>
+                        </div>
+                        <h3>Bases de Datos</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">PL/SQL</span>
+                            <span class="skill-tag">Oracle</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nueva sección de habilidades blandas -->
+                <div class="soft-skills-container">
+                    <div class="soft-skills-category">
+                        <div class="soft-skills-icon">
+                            <svg width="60px" height="60px" stroke-width="0.7" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" color="#8c8c8c">
+                                <path d="M1 20v-1a7 7 0 0 1 7-7v0a7 7 0 0 1 7 7v1" stroke="#8c8c8c" stroke-width="0.7"
+                                    stroke-linecap="round"></path>
+                                <path d="M13 14v0a5 5 0 0 1 5-5v0a5 5 0 0 1 5 5v.5" stroke="#8c8c8c" stroke-width="0.7"
+                                    stroke-linecap="round"></path>
+                                <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" stroke="#8c8c8c" stroke-width="0.7"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M18 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" stroke="#8c8c8c" stroke-width="0.7"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                        <h3>Habilidades profesionales</h3>
+                        <div class="soft-skills-grid">
+                            <div class="soft-skill-item">
+                                <span class="soft-skill-tag">Trabajo en equipo</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <span class="soft-skill-tag">Comunicación efectiva</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <span class="soft-skill-tag">Resolución de problemas</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <span class="soft-skill-tag">Adaptabilidad</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <span class="soft-skill-tag">Gestión del tiempo</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <span class="soft-skill-tag">Aprendizaje continuo</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <span class="soft-skill-tag">Atención al detalle</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <span class="soft-skill-tag">Pensamiento crítico</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="container">
+                <h2>Proyectos destacados</h2>
+                <div id="projects" class="project-grid">
+                    <div class="project-card">
+                        <h3>Web La Casamentera</h3>
+                        <p>Sitio web completo desarrollado como propuesta para una empresa de organización de bodas.
+                            Incluye diseño responsive elegante, galería de eventos, formulario de contacto funcional y
+                            secciones informativas personalizadas. A pesar de no recibir respuesta a mi propuesta,
+                            este proyecto representa mi primera iniciativa comercial como desarrollador freelance,
+                            donde aprendí la importancia de entender las necesidades del cliente y crear soluciones
+                            web que reflejen la identidad de marca.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                        <a href="https://lacasamentera.vercel.app/" target="_blank" class="project-link">Ver
+                            proyecto</a>
+                    </div>
+                    <div class="project-card coming-soon">
+                        <h3>Próximamente</h3>
+                        <p>Actualmente trabajando en nuevos proyectos emocionantes. Pronto estarán disponibles para
+                            mostrar mi evolución y aprendizaje continuo en el desarrollo web.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">En desarrollo</span>
+                        </div>
+                        <span class="project-link disabled">Próximamente</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <h2 id="contact">Contáctame</h2>
+                <p>Si quieres que aporte mi visión y mis ideas a tu empresa no dudes en contactarme.</p>
+                <div class="contact-links">
+                    <a href="mailto:josemarirg31@gmail.com">Email</a>
+                    <a href="https://www.linkedin.com/in/josemarirg/" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 José María Rodríguez Gómez - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
